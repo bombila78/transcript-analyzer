@@ -1,0 +1,40 @@
+<form
+  class="form-container"
+  [formGroup]="form"
+>
+  <mat-form-field appearance="standard">
+    <mat-label>
+      <mat-icon>supervised_user_circle</mat-icon>
+      <span class="form-label">Agent</span>
+    </mat-label>
+    <mat-select
+      formControlName="agent"
+      (selectionChange)="agentSelected()"
+    >
+      <mat-option
+        *ngFor="let agent of agents"
+        [value]="agent"
+        >
+        {{agent.fullName}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="standard" class="flex-1">
+    <mat-label>
+      <mat-icon>settings_phone</mat-icon>
+      <span class="form-label">Call</span>
+    </mat-label>
+    <mat-select
+      formControlName="call"
+      (selectionChange)="onCallSelected()"
+      >
+      <mat-option
+        *ngFor="let call of calls"
+        [value]="call"
+      >
+        {{call.callStartTime | date}} {{call.customer.fullName}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

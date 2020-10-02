@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: white }
+
+
+.tooltip-box {
+  font-size: 14px;
+  line-height: 20px;
+  background: rgba(97, 97, 97, 0.9);
+  opacity: 0.9;
+  border-radius: 2px;
+  padding: 10px 20px;
+  max-width: 420px !important;
+}

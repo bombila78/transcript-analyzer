@@ -1,0 +1,19 @@
+<mat-toolbar class="manager-toolbar">
+  <div>
+    <app-call-selection-form
+      #callSelectionFormComponent
+      [selectedCallId]="selectedCallId"
+      (callSelected)="onCallSelected($event)"
+    ></app-call-selection-form>
+  </div>
+<div
+  *ngIf="selectedCallId"
+  class="slider-wrapper"
+>
+<app-sensitivity-slider>
+</app-sensitivity-slider>
+
+</div>
+
+</mat-toolbar>
+

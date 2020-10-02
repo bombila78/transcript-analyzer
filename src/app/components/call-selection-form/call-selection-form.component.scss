@@ -1,0 +1,20 @@
+.form-container {
+  font-size: 16px;
+  min-width: 500px;
+  display: flex;
+}
+
+.mat-form-field {
+  margin-left: 16px;
+}
+
+.flex-1 {
+  flex: 1 1 auto;
+}
+
+.form-label {
+  margin-left: 10px;
+  margin-bottom: 7px;
+  color: rgba(0, 0, 0, 0.54);
+}
+

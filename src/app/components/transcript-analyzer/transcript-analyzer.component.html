@@ -1,0 +1,17 @@
+<div class="flex-wrapper">
+  <div class="table-container">
+    <app-transcript-table
+      [callDetails]="callDetails"
+      [realSimilarity]="realSimilarity"
+      (matchedSentenceHovered)="matchedSentenceHovered($event)"
+    ></app-transcript-table>
+  </div>
+  <div class="table-container">
+    <app-script-table
+      #scriptTable
+      [expectedSimilarity]="expectedSimilarity"
+      [scripts]="callDetails.script"
+    ></app-script-table>
+  </div>
+</div>
+

@@ -1,0 +1,23 @@
+.toolbar-inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar-avatar {
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.navbar {
+  background: #5A5A71;
+  color: white;
+  span {
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+

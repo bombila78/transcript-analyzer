@@ -1,0 +1,25 @@
+<div class="slider-container">
+  <div class="slider-text-wrapper">
+    <span class="slider-hint">
+    MATCHING SENSITIVITY
+  </span>
+  </div>
+
+  <mat-slider
+    class="slider"
+    color="primary"
+    min="1"
+    max="100"
+    color="accent"
+    [(value)]="sensitivity"
+    (valueChange)="onSensitivityChange($event)"
+  ></mat-slider>
+  <div class="slider-text-wrapper">
+    <span class="slider-value">
+      {{sensitivity}}%
+    </span>
+  </div>
+</div>
+
+
+
