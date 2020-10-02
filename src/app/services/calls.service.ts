@@ -28,6 +28,7 @@ export class CallsService {
                     callStartTime: new Date(c.callStartTime)
                 })) as Call[])
                 .filter(x => x.agent.agentId === agentId)
+                .sort((a, b) => +b.callStartTime - +a.callStartTime)
 
             subscriber.next(agentCalls)
         })
